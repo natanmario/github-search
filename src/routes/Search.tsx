@@ -11,7 +11,7 @@ export default function Search() {
 
   function addUser() {
     if (user) {
-      useUserStore.setState((state) => ({ user: user, ...state.addUser }));
+      useUserStore.setState((state) => ({ user: user, state }));
     }
   }
 
@@ -24,7 +24,7 @@ export default function Search() {
       <Searchbox setUser={setUser} setLoading={setIsLoading} />
       {isLoading ? (
         <div className="p-8 flex justify-center items-center">
-          <ReactLoading type="spin" color="#c4c4c4" height={100} width={100} />
+          <ReactLoading type="spin" color="#c4c4c4" height={50} width={50} />
         </div>
       ) : (
         user && (

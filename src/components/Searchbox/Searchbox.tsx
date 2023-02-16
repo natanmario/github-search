@@ -41,7 +41,7 @@ export default function Searchbox({ setUser, setLoading }: SearchboxProps) {
       <h1 className="text-gray-200">Pesquisar usuário</h1>
       <div className="flex">
         <input
-          className="border-gray-200 border rounded-l-lg px-2 bg-gray-900 text-gray-200"
+          className="w-full border-gray-200 border rounded-l-lg px-2 bg-gray-900 text-gray-200"
           onChange={(ev) => setUserName(ev.target.value)}
           type="text"
         />
